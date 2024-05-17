@@ -21,3 +21,11 @@ jobs:
           current_time = datetime.now().time()
           print("Current Time:", current_time)
         shell: python
+  run-macos-comands:
+    runs-on: macos-latest
+    needs: ["run-shell-commands"]
+    steps:
+      - name: show current path
+        run: pwd
+      - name: show user name
+        run: whoami
