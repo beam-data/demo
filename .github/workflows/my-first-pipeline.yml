@@ -17,7 +17,7 @@ jobs:
       # run a python cmd
       - name: Python Command
         run: |
-          from datetime imoprt datetime
+          from datetime import datetime
           current_time = datetime.now().time()
           print("Current Time:", current_time)
         shell: python
