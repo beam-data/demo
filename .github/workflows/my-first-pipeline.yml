@@ -21,8 +21,12 @@ jobs:
           current_time = datetime.now().time()
           print("Current Time:", current_time)
         shell: python
-      - name: checkout code
+              
+      - name: Checkout
+        uses: actions/checkout@v4.1.6
+      - name: list files
         run: |
-          git clone https://github.com/beam-data/demo.git
           pwd
-          ls -al
+          ls
+
+
