@@ -2,7 +2,7 @@ name: My First Pipeline
 
 run-name: ${{ github.actor }} generated this run
 
-on: [push]
+on: [push, workflow_dispatch]
 
 jobs:
   run-shell-commands:
