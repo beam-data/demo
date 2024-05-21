@@ -14,9 +14,6 @@ jobs:
         run: |
           python --version
           pip --version
-          git clone https://github.com/beam-data/demo.git
-          pwd
-          ls
       # run a python cmd
       - name: Python Command
         run: |
